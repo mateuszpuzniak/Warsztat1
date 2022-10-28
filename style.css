@@ -23,12 +23,10 @@ body {
 	margin: 0 auto;
 }
 
-
 /* NAGIGACJA */
 
-
 .header {
-	height: 80px;
+	height: 20%;
 	box-shadow: 0px 3px 6px #00000029;
 }
 .header > .container {
@@ -69,7 +67,7 @@ body {
 /* MAIN */
 
 .main {
-	height: 100vh;
+	height: 80%;
 	font-family: var(--font-raleway);
 }
 .main-box {
@@ -80,7 +78,7 @@ body {
 	align-items: center;
 }
 .main-text {
-text-align: center;
+	text-align: center;
 }
 .main .title {
 	font-size: 3.125rem;
@@ -101,8 +99,231 @@ text-align: center;
 	border-radius: 25px;
 	padding: 25px 150px;
 }
-.main .img {
-	
+
+/* SEKCJA PIERWSZA */
+
+.section-sales {
+	font-family: var(--font-raleway);
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.section-info {
+	display: flex;
+	height: 150px;
+	margin-top: 80px;
+}
+.section-info-box {
+	width: 150px;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+}
+
+.section-info-box .img {
+	height: 52px;
+	position: relative;
+	left: 18px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.section-info-box1::before {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	content: '';
+	height: 52px;
+	width: 52px;
+	border-radius: 50%;
+	background-color: var(--color-redish);
+}
+.section-info-box2::before {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	content: '';
+	height: 52px;
+	width: 52px;
+	border-radius: 50%;
+	background-color: var(--color-primary);
+}
+.section-info-box3::before {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	content: '';
+	height: 52px;
+	width: 52px;
+	border-radius: 50%;
+	background-color: var(--color-green);
+}
+.section-info-box .number {
+	height: 25px;
+	margin-bottom: 20px;
+}
+.section-info-box span {
+	/* margin-top: 20px; */
+	color: var(--color-black);
+	font-weight: 800;
+	letter-spacing: 4px;
+}
+.section-info-box p {
+	/* margin-top: 20px; */
+	color: var(--color-grey);
+}
+.section-box h2 {
+	font-size: 2.5rem;
+}
+
+/* SEKCJA DRUGA */
+
+.section-benefits {
+	width: 100vw;
+	font-family: var(--font-raleway);
+	height: 1200px;
+	background-color: var(--color-light-grey);
+	padding-top: 50px;
+}
+
+.section-benefits-box {
+	background-color: var(--color-white);
+	height: 300px;
+	margin-top: 60px;
+	display: flex;
+	position: relative;
+	border-radius: 10px;
+}
+.section-benefits-img {
+	position: relative;
+}
+.section-benefits-img-laptop {
+	height: 60%;
+	margin: 80px;
+	z-index: 1;
+	position: relative;
+}
+.section-benefits-position {
+	position: relative;
+}
+.section-benefits-center-img1::before {
+	position: absolute;
+	top: 40px;
+	right: 180px;
+	content: '';
+	background-color: var(--color-redish);
+	width: 160px;
+	height: 160px;
+	border-radius: 30px;
+	transform: rotate(45deg);
+	z-index: 0;
+}
+.section-benefits-img-iphone {
+	height: 250px;
+	z-index: 1;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 90px;
+	margin-right: 370px;
+}
+.section-benefits-center-img2::before {
+	position: absolute;
+	top: 25px;
+	left: 80px;
+	content: '';
+	background-color: var(--color-primary);
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	z-index: 0;
+}
+.section-benefits-img-trumpet {
+	height: 70%;
+	margin: 20px;
+}
+
+.section-benefits-center-img {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 566px;
+}
+.section-benefits-text {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.section-benefits-text p {
+	margin-left: 50px;
+	width: 400px;
+	margin-top: 30px;
+	line-height: 1.65rem;
+	margin-bottom: 60px;
+}
+
+.section-benefits-text h3 {
+	margin-left: 50px;
+	font-size: 2.1875rem;
+}
+.section-benefits-trumpet {
+	height: 300px;
+	margin-top: 60px;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+
+.section-benefits-text-left {
+	border-radius: 10px;
+	background-color: var(--color-white);
+	width: 650px;
+}
+.section-benefits-text-right {
+	border-radius: 10px;
+	background-color: var(--color-green);
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.border-bottom1 {
+	margin-left: 50px;
+	width: 320px;
+	border-bottom: 4px solid var(--color-redish);
+}
+.border-bottom2 {
+	margin-left: 50px;
+	width: 320px;
+	border-bottom: 4px solid var(--color-primary);
+}
+.border-bottom3 {
+	margin-left: 50px;
+	width: 320px;
+	border-bottom: 4px solid var(--color-green);
+}
+
+
+
+
+/* SEKCJA TRZECIA */
+
+.section-pricing {
+	background-color: var(--color-white);
+	height: 1000px;
 }
 
 
