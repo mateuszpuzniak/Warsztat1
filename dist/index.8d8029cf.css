@@ -247,7 +247,7 @@ h2 {
   text-decoration: none;
 }
 
-.nav-burger {
+.page-burger {
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -262,29 +262,29 @@ h2 {
   overflow: hidden;
 }
 
-.nav-burger strong {
+.page-burger strong {
   position: absolute;
   left: -99999px;
 }
 
-.nav-burger span {
+.page-burger span {
   width: 30px;
   height: 5px;
-  background: #fff;
+  background: #08a6e4;
 }
 
-.nav-burger.is-clicked span:nth-child(3) {
+.page-burger.is-clicked span:nth-child(3) {
   display: none;
 }
 
-.nav-burger.is-clicked span {
+.page-burger.is-clicked span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%)rotate(45deg);
 }
 
-.nav-burger.is-clicked span:nth-child(2) {
+.page-burger.is-clicked span:nth-child(2) {
   transform: translate(-50%, -50%)rotate(-45deg);
 }
 
@@ -334,16 +334,19 @@ h2 {
 
 .main .title {
   margin-bottom: 20px;
+  font-family: Raleway;
   font-size: 3.125rem;
 }
 
 .main .text {
   margin-bottom: 50px;
+  font-family: Open sans;
   font-size: 1rem;
 }
 
 .main .btn a {
   color: #fff;
+  font-family: Open sans;
   font-weight: bold;
   text-decoration: none;
 }
@@ -351,7 +354,7 @@ h2 {
 .main .btn {
   background-color: #08a6e4;
   border: none;
-  border-radius: 25px;
+  border-radius: 40px;
   padding: 25px 150px;
   transition: all .3s;
 }
@@ -461,6 +464,7 @@ h2 {
 .section-benefits {
   width: 100vw;
   background-color: #f7f7f7;
+  border: 1px solid #e8e9ed;
   padding-top: 50px;
   padding-bottom: 100px;
   font-family: Raleway, sans-serif;
@@ -575,6 +579,7 @@ h2 {
 .section-benefits-text-left {
   width: 600px;
   background-color: #fff;
+  border: 1px solid #e8e9ed;
   border-radius: 10px;
 }
 
@@ -906,22 +911,233 @@ input[type="name"], input[type="email"] {
     width: 100%;
     height: 200px;
     box-sizing: border-box;
-    background-color: #fff;
     margin: 0;
     transition: all .3s;
     position: fixed;
-    top: 80px;
+    top: 94px;
     left: -375px;
-    box-shadow: 0 3px 6px #00000029;
   }
 
   .page-nav.is-show {
+    background-color: #fff;
     transition: all .6s;
     left: 0;
+    box-shadow: 0 3px 6px #00000029;
   }
 
   .page-nav-list {
     flex-direction: column;
+  }
+
+  .main-box {
+    margin-top: 90px;
+  }
+
+  .main .title {
+    color: #000;
+    font-size: 2.9rem;
+  }
+
+  .main .text {
+    color: #000;
+    padding: 0 31px;
+    font-size: 1.2rem;
+  }
+
+  .main .btn {
+    margin-bottom: 50px;
+    padding: 25px 90px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 214px;
+    background-image: url("Background.96fc9b9b.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .section-sales {
+    margin: 55px 0;
+  }
+
+  .section-box h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .section-info-box {
+    margin: 15px 0;
+  }
+
+  .section-info-box p {
+    font-size: 1.2rem;
+  }
+
+  .section-info-box span {
+    width: 150px;
+  }
+
+  .section-info-box .number {
+    font-size: 1.4rem;
+  }
+
+  .section-info-box .img, .section-info-box1:before, .section-info-box2:before, .section-info-box3:before {
+    scale: 1.2;
+  }
+
+  .section-info {
+    flex-direction: column;
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .section-benefits {
+    width: 100vw;
+    background-color: #f7f7f7;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-family: Raleway, sans-serif;
+  }
+
+  .section-benefits-box {
+    height: 450px;
+    background-color: #fff;
+    border: 1px solid #e8e9ed;
+    border-radius: 5px;
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+  }
+
+  .section-benefits-text {
+    width: 325px;
+    grid-area: 2 / 1 / 2 / 2;
+  }
+
+  .section-benefits-img-laptop {
+    height: 140px;
+    z-index: 1;
+    margin-top: 10px;
+  }
+
+  .section-benefits-center-img1 {
+    width: 325px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  .section-benefits-center-img1:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    background-color: #fb3b64;
+    border-radius: 40px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    transform: rotate(45deg);
+  }
+
+  .section-benefits-center-img2 {
+    width: 325px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .section-benefits-img-iphone {
+    height: 180px;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 0;
+    position: relative;
+  }
+
+  .section-benefits-center-img2:before {
+    content: "";
+    width: 170px;
+    height: 170px;
+    z-index: 0;
+    background-color: #08a6e4;
+    border-radius: 50%;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .section-benefits-img-trumpet {
+    height: 220px;
+    margin-top: 100px;
+    margin-right: 60px;
+  }
+
+  .section-benefits-center-img {
+    width: 566px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .section-benefits-text p {
+    height: 170px;
+    width: 270px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    line-height: 1.4rem;
+  }
+
+  .section-benefits-text h3 {
+    margin-left: 20px;
+    font-size: 2.1875rem;
+  }
+
+  .section-benefits-text .laptop, .section-benefits-text .iphone {
+    width: 300px;
+  }
+
+  .section-benefits-text .trumpet {
+    width: 330px;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  .section-benefits-trumpet {
+    flex-direction: column;
+    margin-left: 10px;
+    display: flex;
+  }
+
+  .section-benefits-text-left {
+    width: 325px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .section-benefits-text-left p {
+    line-height: 1.4rem;
+  }
+
+  .section-benefits-text-right {
+    width: 325px;
+    height: 170px;
+    background-color: #55dfb4;
+    border-radius: 0 0 10px 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .border-bottom1, .border-bottom2, .border-bottom3 {
+    border-bottom: none;
   }
 }
 
