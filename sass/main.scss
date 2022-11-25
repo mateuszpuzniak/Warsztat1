@@ -11,6 +11,7 @@
 	height: 20%;
 	box-shadow: 0px 3px 6px #00000029;
 	background-color: $color-white;
+	width: 100vw;
 }
 .header > .container {
 	height: 100%;
@@ -100,6 +101,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 .main-text {
 	text-align: center;
@@ -130,9 +132,14 @@
 .main .btn:hover {
 	background-color: #097dab;
 }
-.img {
-	max-width: 100%;
-	height: auto;
+.hero-img {
+	background: url(../assets/Background.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 700px;
+	width: 100%;
+	margin-top: -149px;
 }
 
 /* SEKCJA PIERWSZA */
@@ -467,10 +474,12 @@
 .btn2 {
 	background-color: $color-primary;
 	transition: 0.3s;
+	margin-top: 34px;
 }
 .btn3 {
 	background-color: $color-green;
 	transition: 0.3s;
+	margin-top: 34px;
 }
 // .section-pricing-box:hover {
 // 	scale: 1.2;
@@ -865,15 +874,15 @@ input[type='email'] {
 	}
 	.section-pricing-box1 {
 		display: flex;
-		flex-direction: row;	
+		flex-direction: row;
 	}
 	.section-pricing-box2 {
 		display: flex;
-		flex-direction: row;	
+		flex-direction: row;
 	}
 	.section-pricing-box3 {
 		display: flex;
-		flex-direction: row;	
+		flex-direction: row;
 	}
 	.basic {
 		margin-top: 0;
@@ -903,7 +912,7 @@ input[type='email'] {
 		line-height: 1rem;
 		font-size: 0.9rem;
 	}
-	
+
 	.section-pricing-box .redish {
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -915,7 +924,6 @@ input[type='email'] {
 	}
 	.section-pricing-box .price1 {
 		margin-top: 0;
-		
 	}
 	.section-pricing-box .price2 {
 		margin-top: 0;
@@ -925,30 +933,4 @@ input[type='email'] {
 		margin-top: 0;
 		margin-bottom: 10px;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
