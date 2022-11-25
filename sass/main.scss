@@ -472,9 +472,9 @@
 	background-color: $color-green;
 	transition: 0.3s;
 }
-.section-pricing-box:hover {
-	scale: 1.2;
-}
+// .section-pricing-box:hover {
+// 	scale: 1.2;
+// }
 .btn1:hover {
 	background-color: #9a2941;
 }
@@ -849,6 +849,106 @@ input[type='email'] {
 	.border-bottom3 {
 		border-bottom: none;
 	}
+
+	/* SEKCJA TRZECIA */
+
+	.section-pricing-boxes {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+	}
+	.section-pricing-box {
+		width: 325px;
+		height: 300px;
+		margin-bottom: 75px;
+		display: flex;
+	}
+	.section-pricing-box1 {
+		display: flex;
+		flex-direction: row;	
+	}
+	.section-pricing-box2 {
+		display: flex;
+		flex-direction: row;	
+	}
+	.section-pricing-box3 {
+		display: flex;
+		flex-direction: row;	
+	}
+	.basic {
+		margin-top: 0;
+		width: 162.5px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.section-pricing-box span {
+		margin: 10px;
+		font-size: 1.5rem;
+	}
+	.basic2 {
+		width: 162.5px;
+		height: 100%;
+		position: relative;
+	}
+	.basic2 ul.redish {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		text-align: left;
+	}
+	.section-pricing-box .redish li {
+		line-height: 1rem;
+		font-size: 0.9rem;
+	}
+	
+	.section-pricing-box .redish {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.btn-price {
+		position: absolute;
+		left: -100px;
+		bottom: -28px;
+	}
+	.section-pricing-box .price1 {
+		margin-top: 0;
+		
+	}
+	.section-pricing-box .price2 {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.section-pricing-box .price3 {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
