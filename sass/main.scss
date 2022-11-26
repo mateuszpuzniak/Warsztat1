@@ -1,17 +1,17 @@
 @use 'sass:color';
-@import './generic/reset';
-@import './settings/colors';
-@import './settings/fonts';
-@import './settings/mixins';
-@import './settings/index';
-@import './elements/base';
+@import 'generic/reset';
+@import 'settings/colors';
+@import 'settings/fonts';
+@import 'settings/mixins';
+@import 'settings/index';
+@import 'elements/base';
 
-//
+//HEADER
 .header {
 	height: 20%;
 	box-shadow: 0px 3px 6px #00000029;
 	background-color: $color-white;
-	width: 100vw;
+	width: 100%;
 }
 .header > .container {
 	height: 100%;
@@ -232,7 +232,7 @@
 /* SEKCJA DRUGA */
 
 .section-benefits {
-	width: 100vw;
+	width: 100%;
 	font-family: $font-raleway;
 	background-color: $color-light-grey;
 	padding-top: 50px;
@@ -517,6 +517,7 @@
 	scale: 1.2;
 }
 .phone-email {
+	color: $color-grey;
 	height: 40px;
 	margin-top: 30px;
 	display: flex;
@@ -586,6 +587,7 @@ input[type='email'] {
 	padding: 20px 0;
 	background: $color-light-grey;
 	box-shadow: 0px -5px 40px #00000029;
+	width: 100%;
 }
 .footer-container {
 	display: flex;
@@ -675,6 +677,7 @@ input[type='email'] {
 		background-size: cover;
 		width: 100%;
 		height: 214px;
+		margin-top: -60px;
 	}
 
 	/* SEKCJA PIERWSZA */
@@ -717,7 +720,6 @@ input[type='email'] {
 	/* SEKCJA DRUGA */
 
 	.section-benefits {
-		width: 100vw;
 		font-family: $font-raleway;
 		background-color: $color-light-grey;
 		padding-top: 50px;
@@ -822,7 +824,7 @@ input[type='email'] {
 		width: 300px;
 	}
 	.section-benefits-text .trumpet {
-		width: 330px;
+		width: 300px;
 		padding-right: 20px;
 		padding-top: 20px;
 	}
@@ -835,7 +837,7 @@ input[type='email'] {
 	.section-benefits-text-left {
 		border-radius: 10px 10px 0px 0px;
 		background-color: $color-white;
-		width: 325px;
+		width: 300px;
 	}
 	.section-benefits-text-left p {
 		line-height: 1.4rem;
@@ -843,7 +845,7 @@ input[type='email'] {
 	.section-benefits-text-right {
 		border-radius: 0px 0px 10px 10px;
 		background-color: $color-green;
-		width: 325px;
+		width: 300px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -932,5 +934,67 @@ input[type='email'] {
 	.section-pricing-box .price3 {
 		margin-top: 0;
 		margin-bottom: 10px;
+	}
+	.section-info-questions {
+		flex-direction: column;
+		padding-bottom: 40px;
+	}
+	.section-info-questions-info h4 {
+		font-size: 2.75rem;
+	}
+	.section-info-questions-info p {
+		font-size: 1rem;
+	}
+	.phone-email {
+		flex-direction: column;
+		margin-bottom: 40px;
+		align-items: flex-start;
+	}
+	.phone-email p {
+		margin-right: 0;
+	}
+	.phone-email img {
+		margin-right: 15px;
+		scale: 1;
+	}
+	.contact-info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+	.input {
+		margin-top: 30px;
+		max-width: 300px;
+	}
+	.input p {
+		font-size: 0.9rem;
+		font-weight: 700;
+	}
+	.checkbox {
+		font-size: 0.8rem;
+	}
+	.checkbox span {
+		margin-right: 5px;
+	}
+	label {
+		line-height: 16px;
+		color: $color-grey;
+	}
+	.contact-send {
+		width: 200px;
+		height: 60px;
+		margin-left: 100px;
+		margin-top: 10px;
+	}
+	.footer-info .logo {
+		font-size: 1.8rem;
+	}
+	.footer-text {
+		line-height: 1rem;
+		width: 250px;
+	}
+	.footer-icons {
+		display: flex;
 	}
 }

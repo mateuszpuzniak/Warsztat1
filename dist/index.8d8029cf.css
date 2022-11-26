@@ -213,13 +213,6 @@ h2 {
   margin: 0 auto;
 }
 
-@media (max-width: 1352px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
-  }
-}
-
 .logo {
   color: #08a6e4;
   font-family: Raleway, sans-serif;
@@ -229,7 +222,7 @@ h2 {
 
 .header {
   height: 20%;
-  width: 100vw;
+  width: 100%;
   background-color: #fff;
   box-shadow: 0 3px 6px #00000029;
 }
@@ -466,7 +459,7 @@ h2 {
 }
 
 .section-benefits {
-  width: 100vw;
+  width: 100%;
   background-color: #f7f7f7;
   border: 1px solid #e8e9ed;
   padding-top: 50px;
@@ -783,6 +776,7 @@ h2 {
 }
 
 .phone-email {
+  color: #a5a5a5;
   height: 40px;
   align-items: center;
   margin-top: 30px;
@@ -858,6 +852,7 @@ input[type="name"], input[type="email"] {
 }
 
 .footer {
+  width: 100%;
   background: #f7f7f7;
   padding: 20px 0;
   box-shadow: 0 -5px 40px #00000029;
@@ -958,6 +953,7 @@ input[type="name"], input[type="email"] {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -60px;
   }
 
   .section-sales {
@@ -996,7 +992,6 @@ input[type="name"], input[type="email"] {
   }
 
   .section-benefits {
-    width: 100vw;
     background-color: #f7f7f7;
     padding-top: 50px;
     padding-bottom: 100px;
@@ -1107,7 +1102,7 @@ input[type="name"], input[type="email"] {
   }
 
   .section-benefits-text .trumpet {
-    width: 330px;
+    width: 300px;
     padding-top: 20px;
     padding-right: 20px;
   }
@@ -1119,7 +1114,7 @@ input[type="name"], input[type="email"] {
   }
 
   .section-benefits-text-left {
-    width: 325px;
+    width: 300px;
     background-color: #fff;
     border-radius: 10px 10px 0 0;
   }
@@ -1129,7 +1124,7 @@ input[type="name"], input[type="email"] {
   }
 
   .section-benefits-text-right {
-    width: 325px;
+    width: 300px;
     height: 170px;
     background-color: #55dfb4;
     border-radius: 0 0 10px 10px;
@@ -1211,6 +1206,84 @@ input[type="name"], input[type="email"] {
   .section-pricing-box .price2, .section-pricing-box .price3 {
     margin-top: 0;
     margin-bottom: 10px;
+  }
+
+  .section-info-questions {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .section-info-questions-info h4 {
+    font-size: 2.75rem;
+  }
+
+  .section-info-questions-info p {
+    font-size: 1rem;
+  }
+
+  .phone-email {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .phone-email p {
+    margin-right: 0;
+  }
+
+  .phone-email img {
+    margin-right: 15px;
+    scale: 1;
+  }
+
+  .contact-info {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    display: flex;
+  }
+
+  .input {
+    max-width: 300px;
+    margin-top: 30px;
+  }
+
+  .input p {
+    font-size: .9rem;
+    font-weight: 700;
+  }
+
+  .checkbox {
+    font-size: .8rem;
+  }
+
+  .checkbox span {
+    margin-right: 5px;
+  }
+
+  label {
+    color: #a5a5a5;
+    line-height: 16px;
+  }
+
+  .contact-send {
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+
+  .footer-info .logo {
+    font-size: 1.8rem;
+  }
+
+  .footer-text {
+    width: 250px;
+    line-height: 1rem;
+  }
+
+  .footer-icons {
+    display: flex;
   }
 }
 
